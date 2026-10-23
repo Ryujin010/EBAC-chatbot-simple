@@ -1,0 +1,117 @@
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Fondo de la página ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* ===== Contenedor principal del chatbot ===== */
+.chatbot-container {
+    width: 100%;
+    max-width: 400px;
+    height: 550px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ===== Encabezado ===== */
+.chatbot-header {
+    background-color: #5a4fcf;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+}
+
+.chatbot-header h1 {
+    font-size: 1.2rem;
+}
+
+/* ===== Área de mensajes ===== */
+.chatbot-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #f4f5fb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== Estilo general de los mensajes ===== */
+.message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* Mensajes del usuario (derecha) */
+.user-message {
+    align-self: flex-end;
+    background-color: #5a4fcf;
+    color: #ffffff;
+    border-bottom-right-radius: 4px;
+}
+
+/* Mensajes del chatbot (izquierda) */
+.bot-message {
+    align-self: flex-start;
+    background-color: #e4e6f5;
+    color: #222222;
+    border-bottom-left-radius: 4px;
+}
+
+/* ===== Área de entrada ===== */
+.chatbot-input-area {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+}
+
+.chatbot-input-area input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.chatbot-input-area input:focus {
+    border-color: #5a4fcf;
+}
+
+/* ===== Botón de enviar ===== */
+.chatbot-input-area button {
+    padding: 10px 18px;
+    background-color: #5a4fcf;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.chatbot-input-area button:hover {
+    background-color: #4a40b0;
+}
