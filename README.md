@@ -19,10 +19,6 @@ Proyecto desarrollado durante mi formación en **EBAC**.
 
 Chatbot básico que recibe mensajes del usuario y responde directamente desde el navegador.
 
-<!-- Agrega aquí una captura de pantalla de tu proyecto:
-![Vista previa](./img/preview.png)
--->
-
 ## 🛠️ Tecnologías
 
 - **JavaScript**
